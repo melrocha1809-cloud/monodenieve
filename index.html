@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Muñeco de nieve</title>
+<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+    <a-light type="ambient" color="#FFF5B6" intensity="1"></a-light>
+    <a-light type="directional" color="#FFE6B2" intensity="1" position="-2 1 1"></a-light>
+
+    <a-entity obj-model="obj: nieve.obj; mtl: nieve.mtl" position="0 0 -3" scale="1 1 1">
+    </a-entity>
+
+    <a-plane position="0 0 -5" width="70" height="70" rotation="-90 0 0" color="#7BC8A4">
+    </a-plane>
+
+    <a-sky color="#FFF5E5"></a-sky>
+
+    <a-entity camera look-controls wasd-controls position="0 1 2">
+    </a-entity>
+</a-scene>
+</body>
+</html>
